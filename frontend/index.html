@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IdeaVault</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0f172a">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>✨ IdeaVault</h1>
+            <button id="btn-subscribe" class="btn-primary">🔔 Activar Recordatorios</button>
+        </header>
+
+        <main>
+            <div class="note-input-container glass">
+                <input type="text" id="note-title" placeholder="Título de la idea..." autocomplete="off">
+                <textarea id="note-content" placeholder="Escribe lo que tienes en mente..." rows="3"></textarea>
+                <div class="note-actions">
+                    <button id="btn-add-note" class="btn-gradient">Guardar Nota</button>
+                </div>
+            </div>
+
+            <div class="notes-grid" id="notes-grid">
+                <!-- Las notas aparecerán aquí -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal template para el Toast de alertas -->
+    <div id="toast" class="toast"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
