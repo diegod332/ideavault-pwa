@@ -50,8 +50,6 @@ app.post('/api/remind', (req, res) => {
     }, delay * 1000);
 });
 
-const path = require('path');
-
 const PORT = process.env.PORT || 3002;
 
 // Servir archivos estáticos del frontend
